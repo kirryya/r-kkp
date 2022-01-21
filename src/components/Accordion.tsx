@@ -1,6 +1,4 @@
-
-
-function Accordion(props:any) {
+function Accordion(props: any) {
     console.log('Accordion rendering')
     return (
         <div>
@@ -11,7 +9,7 @@ function Accordion(props:any) {
 }
 
 
-function AccordionTitle(props:any) {
+function AccordionTitle(props: any) {
     console.log('AccordionTitle rendering')
     return (
         <h3>{props.title}</h3>
