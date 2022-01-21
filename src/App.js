@@ -65,23 +65,18 @@ function Star() {
 function AccordionTitle() {
     console.log('AccordionTitle rendering')
     return (
-        <div>
-            <h3>Меню</h3>
-        </div>
+        <h3>Меню</h3>
     )
 }
 
 function AccordionBody() {
     console.log('AccordionBody rendering')
     return (
-        <div>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </div>
-
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
     )
 
 }
