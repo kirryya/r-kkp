@@ -1,7 +1,9 @@
 import React from "react";
 import './App.css';
+// @ts-ignore
 import Accordion from "./components/Accordion.tsx";
-import Rating from "./components/Rating.tsx";
+// @ts-ignore
+import {Rating} from "./components/Rating.tsx";
 
 function hello() {
     return (
@@ -9,11 +11,11 @@ function hello() {
     )
 }
 
-//hello();
+hello();
 
 
 // function declaration
-function App() {
+function App(props:any) {
     console.log('App rendering')
     // полезное что-то
 
@@ -37,7 +39,11 @@ function App() {
     );
 }
 
-function PageTitle(props:any) {
+type PageTitlePropsType = {
+    title: string
+}
+
+function PageTitle(props:PageTitlePropsType) {
     console.log('PageTitle rendering')
     return <h1>{props.title}</h1>
 }
