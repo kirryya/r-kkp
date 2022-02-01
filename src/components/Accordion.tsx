@@ -1,15 +1,13 @@
-import React from "react";
-
 type AccordionPropsType = {
     title: string
 }
 
-function Accordion(props: AccordionPropsType) {
+export function Accordion(props: AccordionPropsType) {
     console.log('Accordion rendering')
-    return         <div>
-            <AccordionTitle title={props.title}/>
-            <AccordionBody/>
-        </div>
+    return <div>
+        <AccordionTitle title={props.title}/>
+        <AccordionBody/>
+    </div>
 }
 
 type AccordionTitlePropsType = {
@@ -34,5 +32,3 @@ function AccordionBody() {
     )
 
 }
-
-export default Accordion;

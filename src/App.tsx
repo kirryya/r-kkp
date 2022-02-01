@@ -1,11 +1,9 @@
-import React from "react";
 import './App.css';
-// @ts-ignore
-import Accordion from "./components/Accordion.tsx";
-// @ts-ignore
-import {Rating} from "./components/Rating.tsx";
+import {Accordion} from "./components/Accordion";
+import {Rating} from "./components/Rating";
 
 function hello() {
+
     return (
         alert('Hello IT_KAMASUTRA')
     )
@@ -15,7 +13,7 @@ hello();
 
 
 // function declaration
-function App(props:any) {
+function App() {
     console.log('App rendering')
     // полезное что-то
 
@@ -43,11 +41,10 @@ type PageTitlePropsType = {
     title: string
 }
 
-function PageTitle(props:PageTitlePropsType) {
+function PageTitle(props: PageTitlePropsType) {
     console.log('PageTitle rendering')
     return <h1>{props.title}</h1>
 }
-
 
 
 export default App;
