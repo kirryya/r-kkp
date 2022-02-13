@@ -2,15 +2,17 @@ import './App.css';
 import {Accordion} from "./components/Accordion";
 import {Rating} from "./components/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
+import {UncontrolledAccordion} from "./components/UncontrolledAccordion";
+import {UncontrolledRating} from "./components/UncontrolledRating";
 
-function hello() {
+/*function hello() {
 
     return (
         alert('Hello IT_KAMASUTRA')
     )
 }
 
-hello();
+hello();*/
 
 
 // function declaration
@@ -24,16 +26,17 @@ function App() {
            {/* <PageTitle title={'This is APP component'}/>
             <PageTitle title={'My friends'}/>
             Article 1
-            <Rating value={3}/>
-            <Accordion titleValue="Menu1" collapsed={true}/>
-            <Accordion titleValue="Menu2" collapsed={false}/>
-            Article 2
+            <Rating value={3}/>*/}
+            <UncontrolledAccordion titleValue="Menu1"/>
+            <UncontrolledAccordion titleValue="Menu2"/>
+           {/* Article 2
             <Rating value={0}/>
             <Rating value={1}/>
             <Rating value={2}/>
             <Rating value={3}/>
             <Rating value={4}/>
             <Rating value={5}/>*/}
+            <UncontrolledRating />
             <OnOff />
             <OnOff />
         </div>
