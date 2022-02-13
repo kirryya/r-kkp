@@ -21,7 +21,7 @@ function App() {
     // обязана вернуть JSX
     return (
         <div>
-            <PageTitle title={'This is APP component'}/>
+           {/* <PageTitle title={'This is APP component'}/>
             <PageTitle title={'My friends'}/>
             Article 1
             <Rating value={3}/>
@@ -33,9 +33,9 @@ function App() {
             <Rating value={2}/>
             <Rating value={3}/>
             <Rating value={4}/>
-            <Rating value={5}/>
-            <OnOff value={true}/>
-            <OnOff value={false}/>
+            <Rating value={5}/>*/}
+            <OnOff />
+            <OnOff />
         </div>
     );
 }

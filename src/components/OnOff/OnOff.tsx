@@ -1,52 +1,53 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-type OnOffType = {
-    value: boolean
+type PropsType = {
+    //on: boolean
 }
 
 
-export const OnOff = (props: OnOffType) => {
+export const OnOff = (props: PropsType) => {
 
-    const on = {
-        backgroundColor: "green",
-    };
+    let [on, setOn] = useState(false);
 
-    const off = {
-        backgroundColor: "red",
-    };
-
-    const circleOn = {
-        height: "15px",
-        width: "15px",
-        backgroundColor: "green",
-        borderRadius: "50%",
+    const onStyle = {
+        width: "30px",
+        height: "20px",
+        border: "1px solid black",
+        display: "inLine-block",
+        marginTop: "5px",
         marginLeft: "5px",
-};
+        padding: "2px",
+        backgroundColor: on ? "green" : "white"
+    };
 
-    const circleOff = {
+    const offStyle = {
+        width: "30px",
+        height: "20px",
+        border: "1px solid black",
+        display: "inLine-block",
+        marginTop: "5px",
+        marginLeft: "2px",
+        padding: "2px",
+        backgroundColor: on ? "white" : "red"
+    };
+
+    const indicatorStyle = {
         height: "15px",
         width: "15px",
-        backgroundColor: "red",
         borderRadius: "50%",
-        marginLeft: "5px"
-};
+        border: "1px solid black",
+        marginTop: "5px",
+        marginLeft: "5px",
+        display: "inLine-block",
+        backgroundColor: on ? "green" : "red"
+    };
 
-    if (props.value) {
-        return (
-            <div>
-                <button style={on}>On</button>
-                <button>Off</button>
-                <button style={circleOn}> </button>
-            </div>
-        );
-    } else {
-        return (
-            <div>
-                <button>On</button>
-                <button style={off}>Off</button>
-                <button style={circleOff}> </button>
-            </div>
-        )
-    }
+    return (
+        <div>
+            <div style={onStyle} onClick={() => setOn(true)}>On</div>
+            <div style={offStyle} onClick={() => setOn(false)}>Off</div>
+            <div style={indicatorStyle}> </div>
+        </div>
+    );
 };
 
