@@ -23,10 +23,10 @@ function App() {
     // обязана вернуть JSX
     return (
         <div className={"App"}>
-           {/* <PageTitle title={'This is APP component'}/>
+            {/*<PageTitle title={'This is APP component'}/>
             <PageTitle title={'My friends'}/>
-            Article 1
-            <Rating value={3}/>*/}
+            Article 1*/}
+            <Rating value={3}/>
             <UncontrolledAccordion titleValue="Menu1"/>
             <UncontrolledAccordion titleValue="Menu2"/>
            {/* Article 2
