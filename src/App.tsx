@@ -38,7 +38,7 @@ function App() {
             <Rating value={5}/>*/}
             <UncontrolledRating />
             <OnOff />
-            <OnOff />
+           {/* <OnOff />*/}
         </div>
     );
 }
