@@ -1,9 +1,10 @@
 import './App.css';
 import {Accordion} from "./components/Accordion";
-import {Rating} from "./components/Rating";
+import {Rating, RatingValueType} from "./components/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
 import {UncontrolledAccordion} from "./components/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating";
+import {useState} from "react";
 
 /*function hello() {
 
@@ -20,13 +21,15 @@ function App() {
     console.log('App rendering')
     // полезное что-то
 
+    let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
+
     // обязана вернуть JSX
     return (
         <div className={"App"}>
             {/*<PageTitle title={'This is APP component'}/>
             <PageTitle title={'My friends'}/>
             Article 1*/}
-            <Rating value={3}/>
+            <Rating value={ratingValue} onClick={setRatingValue}/>
             <UncontrolledAccordion titleValue="Menu1"/>
             <UncontrolledAccordion titleValue="Menu2"/>
            {/* Article 2
