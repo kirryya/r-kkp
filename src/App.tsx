@@ -5,6 +5,7 @@ import {OnOff} from "./components/OnOff/OnOff";
 import {UncontrolledAccordion} from "./components/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating";
 import {useState} from "react";
+import {ControlOnOff} from "./components/OnOff/ControlOnOff";
 
 /*function hello() {
 
@@ -22,6 +23,8 @@ function App() {
     // полезное что-то
 
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
+    let [collapsed, setCollapsed] = useState<boolean>(false)
+    let [onOff, setOnOff] = useState<boolean>(false)
 
     // обязана вернуть JSX
     return (
@@ -29,6 +32,7 @@ function App() {
             {/*<PageTitle title={'This is APP component'}/>
             <PageTitle title={'My friends'}/>
             Article 1*/}
+            <Accordion titleValue={"Menu"} collapsed={collapsed} onClick={() => {setCollapsed(!collapsed)}} />
             <Rating value={ratingValue} onClick={setRatingValue}/>
             <UncontrolledAccordion titleValue="Menu1"/>
             <UncontrolledAccordion titleValue="Menu2"/>
@@ -41,6 +45,7 @@ function App() {
             <Rating value={5}/>*/}
             <UncontrolledRating />
             <OnOff />
+            <ControlOnOff on={onOff} setOn={setOnOff} />
            {/* <OnOff />*/}
         </div>
     );
