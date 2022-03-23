@@ -45,6 +45,7 @@ function App() {
             <Rating value={5}/>*/}
             <UncontrolledRating />
             <OnOff />
+            <OnOff />
             <ControlOnOff on={onOff} setOn={setOnOff} />
            {/* <OnOff />*/}
         </div>
