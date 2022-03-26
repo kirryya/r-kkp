@@ -7,6 +7,7 @@ import {UncontrolledRating} from "./components/UncontrolledRating";
 import {useState} from "react";
 import {ControlOnOff} from "./components/OnOff/ControlOnOff";
 import {UncontrolledInput} from "./components/UncontrolledInput";
+import {UncontrolledInputWithButton} from "./components/UncontrolledInputWithButton";
 
 /*function hello() {
 
@@ -48,6 +49,7 @@ function App() {
             <OnOff />
             <ControlOnOff on={onOff} setOn={setOnOff} />
             <UncontrolledInput/>
+            <UncontrolledInputWithButton/>
            {/* <OnOff />*/}
         </div>
     );
