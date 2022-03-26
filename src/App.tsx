@@ -8,6 +8,8 @@ import {useState} from "react";
 import {ControlOnOff} from "./components/OnOff/ControlOnOff";
 import {UncontrolledInput} from "./components/UncontrolledInput";
 import {UncontrolledInputWithButton} from "./components/UncontrolledInputWithButton";
+import {ControlledInput} from "./components/ControlledInput";
+import {ControlledCheckbox} from "./components/ControlledCheckbox";
 
 /*function hello() {
 
@@ -50,6 +52,8 @@ function App() {
             <ControlOnOff on={onOff} setOn={setOnOff} />
             <UncontrolledInput/>
             <UncontrolledInputWithButton/>
+            <ControlledInput />
+            <ControlledCheckbox />
            {/* <OnOff />*/}
         </div>
     );
