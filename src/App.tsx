@@ -10,6 +10,7 @@ import {UncontrolledInput} from "./components/UncontrolledInput";
 import {UncontrolledInputWithButton} from "./components/UncontrolledInputWithButton";
 import {ControlledInput} from "./components/ControlledInput";
 import {ControlledCheckbox} from "./components/ControlledCheckbox";
+import {ControlledSelect} from "./components/ControlledSelect";
 
 /*function hello() {
 
@@ -54,6 +55,7 @@ function App() {
             <UncontrolledInputWithButton/>
             <ControlledInput />
             <ControlledCheckbox />
+            <ControlledSelect />
            {/* <OnOff />*/}
         </div>
     );
