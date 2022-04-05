@@ -10,6 +10,7 @@ import {ControlledInput} from "./components/Input/ControlledInput";
 import {ControlledCheckbox} from "./components/ControlledCheckbox";
 import {ControlledSelect} from "./components/ControlledSelect";
 import Select from "./components/Select/Select";
+import {UncontrolledAccordion} from "./components/Accordion/UncontrolledAccordion";
 
 /*function hello() {
 
@@ -51,9 +52,9 @@ function App() {
                        onBodyClick={onClickCallback}/>
 
             <Rating value={ratingValue} onClick={setRatingValue}/>
-            {/* <UncontrolledAccordion titleValue="Menu1"/>
+            <UncontrolledAccordion titleValue="Menu1"/>
             <UncontrolledAccordion titleValue="Menu2"/>
-            Article 2
+            {/* Article 2
             <Rating value={0} onClick={() => {}}/>
             <Rating value={1} onClick={() => {}}/>
             <Rating value={2} onClick={() => {}}/>
