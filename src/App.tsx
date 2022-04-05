@@ -11,6 +11,7 @@ import {ControlledCheckbox} from "./components/ControlledCheckbox";
 import {ControlledSelect} from "./components/ControlledSelect";
 import Select from "./components/Select/Select";
 import {UncontrolledAccordion} from "./components/Accordion/UncontrolledAccordion";
+import Memo_Demo from "./components/memo_demo/Memo_Demo";
 
 /*function hello() {
 
@@ -70,6 +71,7 @@ function App() {
             <ControlledCheckbox/>
             <ControlledSelect/>
             {/* <OnOff />*/}
+            <Memo_Demo/>
             <Select value={value} onChange={setValue}
                     items={[{title: "Minsk", value: "1"}, {title: "Kiev", value: "2"}, {
                         title: "Vilnius",
