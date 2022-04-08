@@ -12,6 +12,7 @@ import {ControlledSelect} from "./components/ControlledSelect";
 import Select from "./components/Select/Select";
 import {UncontrolledAccordion} from "./components/Accordion/UncontrolledAccordion";
 import Memo_Demo from "./components/memo_demo/Memo_Demo";
+import {Difficult_counting} from "./components/memo_demo/Difficult_counting";
 
 /*function hello() {
 
@@ -72,6 +73,7 @@ function App() {
             <ControlledSelect/>
             {/* <OnOff />*/}
             <Memo_Demo/>
+            <Difficult_counting/>
             <Select value={value} onChange={setValue}
                     items={[{title: "Minsk", value: "1"}, {title: "Kiev", value: "2"}, {
                         title: "Vilnius",
