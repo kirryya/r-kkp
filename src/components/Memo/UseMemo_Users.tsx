@@ -1,4 +1,4 @@
-import React, {useMemo, useState} from 'react';
+import React, {useCallback, useMemo, useState} from 'react';
 
 const UsersSecret = (props: { users: Array<string> }) => {
     console.log("UsersSecret")
@@ -16,12 +16,14 @@ const UseMemo_Users = () => {
     const [users, setUsers] = useState(["Andrei", "Kostya", "Iryna", "Dimych"])
 
     const newArray = useMemo(() => {
-         return users.filter( u => u.toLowerCase().includes('a'))
+        return users.filter(u => u.toLowerCase().includes('a'))
     }, [users])
 
-    const addCount = () => {
-        setCounter(counter + 1)
-    }
+    const addCount = useCallback(() => {
+            setCounter(counter + 1)
+        },
+        [counter]
+    )
 
     return (
         <>
