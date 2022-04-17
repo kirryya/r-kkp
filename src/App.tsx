@@ -14,6 +14,7 @@ import {UncontrolledAccordion} from "./components/Accordion/UncontrolledAccordio
 import Memo_Demo from "./components/Memo/Memo_Demo";
 import {Difficult_counting} from "./components/Memo/Difficult_counting";
 import UseMemo_Users from "./components/Memo/UseMemo_Users";
+import NewUseState from "./components/NewUseState";
 
 /*function hello() {
 
@@ -76,6 +77,7 @@ function App() {
             <Memo_Demo/>
             <UseMemo_Users/>
             <Difficult_counting/>
+            <NewUseState/>
             <Select value={value} onChange={setValue}
                     items={[{title: "Minsk", value: "1"}, {title: "Kiev", value: "2"}, {
                         title: "Vilnius",
