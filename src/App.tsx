@@ -15,6 +15,7 @@ import Memo_Demo from "./components/Memo/Memo_Demo";
 import {Difficult_counting} from "./components/Memo/Difficult_counting";
 import UseMemo_Users from "./components/Memo/UseMemo_Users";
 import NewUseState from "./components/NewUseState";
+import Clock from "./components/Clock";
 
 /*function hello() {
 
@@ -78,6 +79,7 @@ function App() {
             <UseMemo_Users/>
             <Difficult_counting/>
             <NewUseState/>
+            <Clock/>
             <Select value={value} onChange={setValue}
                     items={[{title: "Minsk", value: "1"}, {title: "Kiev", value: "2"}, {
                         title: "Vilnius",
