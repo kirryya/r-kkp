@@ -15,16 +15,8 @@ import Memo_Demo from "./components/Memo/Memo_Demo";
 import {Difficult_counting} from "./components/Memo/Difficult_counting";
 import UseMemo_Users from "./components/Memo/UseMemo_Users";
 import NewUseState from "./components/NewUseState";
-import Clock from "./components/Clock";
-
-/*function hello() {
-
-    return (
-        alert('Hello IT_KAMASUTRA')
-    )
-}
-
-hello();*/
+import {DigitalClock} from "./components/DigitalClock";
+import {AnalogClock} from "./components/AnalogClock";
 
 
 // function declaration
@@ -79,7 +71,8 @@ function App() {
             <UseMemo_Users/>
             <Difficult_counting/>
             <NewUseState/>
-            <Clock/>
+            <DigitalClock/>
+            <AnalogClock/>
             <Select value={value} onChange={setValue}
                     items={[{title: "Minsk", value: "1"}, {title: "Kiev", value: "2"}, {
                         title: "Vilnius",

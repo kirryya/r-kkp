@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 const twoDigits = (num: number) => num < 10 ? "0" + num : num
 
-const Clock = () => {
+export const DigitalClock = () => {
 
     const [date, setDate] = useState(new Date())
 
@@ -28,5 +28,3 @@ const Clock = () => {
         </>
     );
 };
-
-export default Clock;
