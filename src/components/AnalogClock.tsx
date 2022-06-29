@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
-
-const twoDigits = (num: number) => num < 10 ? "0" + num : num
+import "./AnalogClock.css"
 
 export const AnalogClock = () => {
 
@@ -18,23 +17,26 @@ export const AnalogClock = () => {
 
     }, [])
 
-    let seconds = twoDigits(date.getSeconds())
-    let minutes = twoDigits(date.getMinutes())
-    let hours = twoDigits(date.getHours())
+    let seconds = date.getSeconds()
+    let minutes = date.getMinutes()
+    let hours = date.getHours()
 
+    const secondsStyle = {
+        transform: `rotate(${seconds * 6}deg)`
+    };
+    const minutesStyle = {
+        transform: `rotate(${minutes * 6}deg)`
+    };
+    const hoursStyle = {
+        transform: `rotate(${hours * 30}deg)`
+    };
 
     return (
-        <div>
-            <div className="relative flex items-center justify-end w-20 h-20 overflow-hidden bg-gray-900 rounded-full ">
-                <div className="absolute w-1/2 h-1 bg-white rounded-full origin-left -rotate-12 group-hover:rotate-[215deg] duration-1000 ease-in-out" />
-
-                <div className="absolute w-1/2 h-1  origin-left rotate-[70] group-hover:rotate-[340deg] duration-1000 ease-in-out">
-                    <div className="w-2/3 h-full bg-white rounded-full" />
-                </div>
-
-                <div className="absolute flex justify-center flex-1 w-full">
-                    <div className="w-1 h-1 bg-white rounded-full" />
-                </div>
+        <div className={"clock"}>
+            <div className={"analog-clock"}>
+                <div className={"dial seconds"} style={secondsStyle} />
+                <div className={"dial minutes"} style={minutesStyle} />
+                <div className={"dial hours"} style={hoursStyle} />
             </div>
         </div>
     );
