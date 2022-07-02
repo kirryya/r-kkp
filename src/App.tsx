@@ -17,6 +17,8 @@ import UseMemo_Users from "./components/Memo/UseMemo_Users";
 import NewUseState from "./components/NewUseState";
 import {DigitalClock} from "./components/DigitalClock";
 import {AnalogClock} from "./components/AnalogClock";
+import { ResetEffectExample } from './components/ResetEffectExample';
+
 
 
 // function declaration
@@ -73,6 +75,7 @@ function App() {
             <NewUseState/>
             <DigitalClock/>
             <AnalogClock/>
+            <ResetEffectExample/>
             <Select value={value} onChange={setValue}
                     items={[{title: "Minsk", value: "1"}, {title: "Kiev", value: "2"}, {
                         title: "Vilnius",
